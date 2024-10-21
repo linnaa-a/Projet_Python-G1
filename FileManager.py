@@ -1,7 +1,6 @@
 import os
 import re
 
-
 class FileManager:
     def __init__(self, file_path):
         """Initialise le gestionnaire de fichiers avec le chemin du fichier"""
