@@ -10,16 +10,17 @@ Ce projet est une application Python qui permet de gérer des fichiers de logs t
 Lecture du contenu d'un fichier.
 Ajout de contenu à un fichier existant.
 Recherche de mots-clés (comme "ERROR", "INFO", etc.) dans un fichier texte.
-Prérequis
-Python 3.x doit être installé sur votre machine.
-Pip (le gestionnaire de paquets Python) est nécessaire pour installer les dépendances.
+
+**Prérequis**
+
+Python 3.x doit être installé sur votre machine. Pip (le gestionnaire de paquets Python) est nécessaire pour installer les dépendances.
 
 **Mise en place d'un environnement virtuel (venv)**
 
 **Créer un environnement virtuel :**
 
 ```
-python -m venv venv
+python -m venv .venv
 ```
 
 **Activer l'environnement virtuel :**
@@ -27,13 +28,13 @@ python -m venv venv
 Sous Windows :
 
 ```
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 Sous macOS/Linux :
 
 ```
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 **Installation des dépendances**
