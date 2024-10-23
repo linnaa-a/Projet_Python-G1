@@ -16,21 +16,21 @@ class FileManager:
             raise FileNotFoundError(f"Le fichier {self.file_path} n'existe pas.")
 
         with open(self.file_path, 'r', encoding='utf-8') as file:  # Ouvre le fichier en lecture
-            content = file.read()  # Lit tout le contenu
-        return content
+            data = file.read()  # Lit tout le contenu
+        return data
 
-    def write_file(self, content):
+    def write_file(self, data):
         """Écrit le contenu donné dans le fichier.
 
         Si le fichier n'existe pas, il sera créé.
         """
         with open(self.file_path, 'w', encoding='utf-8') as file:  # Ouvre le fichier en mode écriture (écrase le contenu existant)
-            file.write(content)  # Écrit le contenu fourni dans le fichier
+            file.write(data)  # Écrit le contenu fourni dans le fichier
 
-    def append_to_file(self, content):
+    def append_to_file(self, data):
         """Ajoute le contenu donné à la fin du fichier sans écraser l'existant."""
         with open(self.file_path, 'a', encoding='utf-8') as file:  # Ouvre le fichier en mode ajout
-            file.write(content)  # Ajoute le contenu à la fin du fichier
+            file.write(data)  # Ajoute le contenu à la fin du fichier
 
     def search_keyword(self, keyword):
         """Recherche un mot-clé dans le fichier.
