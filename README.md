@@ -13,8 +13,10 @@ Recherche de mots-clés (comme "ERROR", "INFO", etc.) dans un fichier texte.
 Prérequis
 Python 3.x doit être installé sur votre machine.
 Pip (le gestionnaire de paquets Python) est nécessaire pour installer les dépendances.
-Mise en place d'un environnement virtuel (venv)
-Créer un environnement virtuel :
+
+**Mise en place d'un environnement virtuel (venv)**
+
+**Créer un environnement virtuel :**
 
 ```
 python -m venv venv
